@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media - mas0ng.com</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px; /* Added padding at the bottom for better look on mobile */
+  }
+
+  .social-media-title {
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 0 10px; /* Ensure the title doesn't touch the edges on small screens */
+    background: -webkit-linear-gradient(left, #654ea3, #eaafc8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for larger screens */
+    margin: 0 auto; /* Centering the ul */
+  }
+
+  .social-links li {
+    margin: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #654ea3;
+    transition: color 0.3s ease;
+    display: block; /* Make each link a block for easier tapping on mobile */
+    padding: 10px; /* Larger area for touch */
+  }
+
+  .social-links a:hover {
+    color: #553d67;
+  }
+
+  @media (max-width: 768px) {
+    .social-media-title {
+      font-size: 1.5em; /* Smaller font size on smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1 class="social-media-title">Connect with mas0ng.com</h1>
+
+<ul class="social-links">
+  <!-- Replace '#' with the actual URL to your social media profiles -->
+  <li><a href="https://tiktok.com/@mas0ng" target="_blank">Tiktok</a></li>
+  <li><a href="https://instagram.com/mas0ng20" target="_blank">Instagram</a></li>
+  <li><a href="https://snapchat.com/add/mas0ng" target="_blank">Snapchat</a></li>
+  <!-- Add other social media platforms as needed -->
+</ul>
+
+</body>
+</html>
