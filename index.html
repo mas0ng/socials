@@ -6,68 +6,75 @@
 <title>Social Media - mas0ng.com</title>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f5f5f5;
+    padding: 20px;
+    background: #fafafa;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 20px; /* Added padding at the bottom for better look on mobile */
   }
 
   .social-media-title {
     font-size: 2em;
-    margin: 20px 0;
-    padding: 0 10px; /* Ensure the title doesn't touch the edges on small screens */
-    background: -webkit-linear-gradient(left, #654ea3, #eaafc8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 20px;
+    color: #333;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.7);
   }
 
   .social-links {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    width: 100%; /* Full width */
-    max-width: 400px; /* Max width for larger screens */
-    margin: 0 auto; /* Centering the ul */
+    width: calc(100% - 40px); /* Full width minus padding */
+    max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .social-links li {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .social-links a {
     text-decoration: none;
-    color: #654ea3;
-    transition: color 0.3s ease;
-    display: block; /* Make each link a block for easier tapping on mobile */
-    padding: 10px; /* Larger area for touch */
+    background-image: -webkit-linear-gradient(left, #654ea3, #eaafc8);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding does not add to width */
   }
 
   .social-links a:hover {
-    color: #553d67;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
   }
 
   @media (max-width: 768px) {
     .social-media-title {
-      font-size: 1.5em; /* Smaller font size on smaller screens */
+      font-size: 1.75em;
+    }
+    .social-links a {
+      padding: 10px 18px;
     }
   }
 </style>
 </head>
 <body>
 
-<h1 class="social-media-title">My Socials:</h1>
+<h1 class="social-media-title">Connect with Me:</h1>
 
 <ul class="social-links">
-  <!-- Replace '#' with the actual URL to your social media profiles -->
-  <li><a href="https://tiktok.com/@mas0ng" target="_blank">Tiktok</a></li>
+  <!-- Updated links to open in new tabs -->
+  <li><a href="https://tiktok.com/@mas0ng" target="_blank">TikTok</a></li>
   <li><a href="https://instagram.com/mas0ng20" target="_blank">Instagram</a></li>
   <li><a href="https://snapchat.com/add/mas0ng" target="_blank">Snapchat</a></li>
-  <!-- Add other social media platforms as needed -->
+  <!-- More social media platforms can be added here -->
 </ul>
 
 </body>
